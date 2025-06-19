@@ -1,6 +1,6 @@
 import "./xheader.css";
 
-export default function xheader() {
+export default function Xheader() {
     return (
         <>
             <header id="header">
