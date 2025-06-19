@@ -1,11 +1,11 @@
 import "./xheader.css";
 
-function xheader() {
+export default function xheader() {
     return (
         <>
             <header id="header">
                 
-                <h1 id="site-title"><a href="App.jsx"><img id="site-logo" src="../../public/img/logo.svg" alt="" /></a></h1>
+                <h1 id="site-title"><a href="App.jsx"><img id="site-logo" src="/img/logo.svg" alt="" /></a></h1>
 
                 <nav>
                     <ul id="nav-contents">
@@ -21,5 +21,3 @@ function xheader() {
         </>
     );
 }
-
-export default xheader;
