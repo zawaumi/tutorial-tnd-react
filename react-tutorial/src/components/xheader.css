@@ -17,7 +17,7 @@ body {
 
     box-sizing: inherit;
 
-    max-width: 960px;
+    width: 960px;
     height: 270px;
 
     margin: 0 auto;
