@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-
 import Xheader from './components/xheader'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <html className='text-[100%] leading-none box-border text-[#24292e]'>
-        <body className='m-0'>
-          <Xheader></Xheader>
-        </body>
-      </html>
-    </>
+    <div className="min-h-screen bg-white text-[#24292e]">
+      <Xheader />
+      {/* ここに他のコンテンツを追加できます */}
+      <main className="max-w-[960px] mx-auto px-[4%]">
+        {/* メインコンテンツ */}
+      </main>
+    </div>
   )
 }
 
