@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function Xheader() {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [activeNav, setActiveNav] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -55,8 +54,6 @@ export default function Xheader() {
                                             transition-all duration-300 hover:text-blue-600 
                                             hover:-translate-y-1 hover:scale-105 block group"
                                 href={item.href}
-                                onMouseEnter={() => setActiveNav(item.href)}
-                                onMouseLeave={() => setActiveNav('')}
                             >
                                 {item.label}
                                 {/* アンダーラインアニメーション */}
