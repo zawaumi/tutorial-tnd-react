@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Xheader from './components/xheader'
+import Xaboutus from './components/xaboutus'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
       {/* ここに他のコンテンツを追加できます */}
       <main className="max-w-[960px] mx-auto px-[4%]">
         {/* メインコンテンツ */}
+        <Xaboutus />
       </main>
     </div>
   )
