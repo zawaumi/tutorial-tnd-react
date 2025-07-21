@@ -1,18 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Exhibit from './components/exhibit'
+import Xheader from './components/xheader'
+import Xaboutus from './components/xaboutus'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <Exhibit>
+
+    <div className="min-h-screen bg-white text-[#24292e]">
+      <Xheader />
+      {/* ここに他のコンテンツを追加できます */}
+      <main className="max-w-[960px] mx-auto px-[4%]">
+        <Exhibit>
 
       </Exhibit>
-    </>
+        <Xaboutus />
+      </main>
+    </div>
   )
 }
 
